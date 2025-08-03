@@ -18,10 +18,16 @@ ColorARGB::ColorARGB(int alpha, int red, int green, int blue)
 }
 
 /// <summary>
-/// Returns requested ColorARGB value.
+/// Retrieves the specified ARGB component value from the ColorARGB object.
 /// </summary>
-/// <param name="value">(char) ARGB value to return.</param>
-/// <returns>(int) ARGB value</returns>
+/// <param name="value">
+/// (char) A character indicating which component to retrieve:
+/// 'A' or 'a' for alpha, 'R' or 'r' for red, 'G' or 'g' for green, 'B' or 'b' for blue.
+/// </param>
+/// <returns>
+/// The integer value of the requested ARGB component.
+/// Returns 0 if the input is invalid and logs an error to std::cerr.
+/// </returns>
 int ColorARGB::getValue(char value) const
 {
 	switch (value)
@@ -52,6 +58,7 @@ int ColorARGB::getValue(char value) const
 	}
 	default:
 		std::cerr << "Invalid color value.\n";
+		return 0;
 		break;
 	}
 }
