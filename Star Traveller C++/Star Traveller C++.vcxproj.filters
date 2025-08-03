@@ -31,7 +31,10 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AsciiHandler.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorARGB.cpp">
+      <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -41,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AsciiHandler.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorARGB.h">
       <Filter>Header Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
