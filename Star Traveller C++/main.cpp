@@ -4,7 +4,7 @@
 int main() {
     terminal_open();
 
-    AsciiHandler titleArt("title_art.txt");
+    AsciiHandler titleArt;
 
     titleArt.setArtData("title_art.txt");
     titleArt.displayArt(0, 0);

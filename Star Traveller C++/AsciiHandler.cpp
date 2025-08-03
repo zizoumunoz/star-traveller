@@ -6,11 +6,10 @@
 #include <iostream>
 #include "AsciiHandler.h"
 #include "BearLibTerminal.h"
+#include "ColorARGB.h"
 
-AsciiHandler::AsciiHandler(std::string fileName)
-	: _fileName(fileName)
+AsciiHandler::AsciiHandler()
 {
-
 }
 
 /// <summary>
@@ -39,5 +38,13 @@ int AsciiHandler::setArtData(std::string fileName)
 
 void AsciiHandler::displayArt(int xCoord, int yCoord)
 {
+	terminal_color(
+		color_from_argb(_artColor._alpha, _artColor._red, _artColor._green, _artColor._blue)
+	);
 	terminal_printf(xCoord, yCoord, "%s", _artData.data());
+}
+
+void AsciiHandler::setColor(ColorARGB newColor)
+{
+	_artColor = newColor;
 }

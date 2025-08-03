@@ -7,6 +7,8 @@ public:
 	ColorARGB(int alpha, int red, int green, int blue);
 	int getValue(char value) const;
 
+	friend class AsciiHandler;
+
 private:
 	int _alpha;
 	int _red;
