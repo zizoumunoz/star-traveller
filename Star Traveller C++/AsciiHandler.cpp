@@ -5,6 +5,7 @@
 #include "AsciiHandler.h"
 
 AsciiHandler::AsciiHandler(std::string fileName)
+	: _fileName(fileName)
 {
 
 }

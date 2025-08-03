@@ -6,7 +6,6 @@ class AsciiHandler
 {
 public:
 	AsciiHandler(std::string fileName);
-
 	int setArtData(std::string &fileName);
 
 private:
