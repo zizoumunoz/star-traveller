@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36327.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Star Traveller C++", "Star Traveller C++\Star Traveller C++.vcxproj", "{DA368F17-3E51-4AA8-872A-03EB20BF4539}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA368F17-3E51-4AA8-872A-03EB20BF4539}.Debug|x64.ActiveCfg = Debug|x64
+		{DA368F17-3E51-4AA8-872A-03EB20BF4539}.Debug|x64.Build.0 = Debug|x64
+		{DA368F17-3E51-4AA8-872A-03EB20BF4539}.Debug|x86.ActiveCfg = Debug|Win32
+		{DA368F17-3E51-4AA8-872A-03EB20BF4539}.Debug|x86.Build.0 = Debug|Win32
+		{DA368F17-3E51-4AA8-872A-03EB20BF4539}.Release|x64.ActiveCfg = Release|x64
+		{DA368F17-3E51-4AA8-872A-03EB20BF4539}.Release|x64.Build.0 = Release|x64
+		{DA368F17-3E51-4AA8-872A-03EB20BF4539}.Release|x86.ActiveCfg = Release|Win32
+		{DA368F17-3E51-4AA8-872A-03EB20BF4539}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA490614-8E52-41A7-AF31-9FA7C6F84241}
+	EndGlobalSection
+EndGlobal
