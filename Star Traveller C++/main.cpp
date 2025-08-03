@@ -1,11 +1,16 @@
 ﻿#include "BearLibTerminal.h"
+#include "AsciiHandler.h"
 
 int main() {
     terminal_open();
 
+    AsciiHandler titleArt("title_art.txt");
 
-    terminal_print(1, 1, u8"█");
-    terminal_print(1, 2, u8"The quick brown fox jumps over the lazy dog");
+    titleArt.setArtData("title_art.txt");
+    titleArt.displayArt(0, 0);
+
+
+
     terminal_refresh();
     terminal_read();
 
