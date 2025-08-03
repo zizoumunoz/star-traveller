@@ -10,6 +10,9 @@
 
 AsciiHandler::AsciiHandler()
 {
+	// default color white
+	ColorARGB white(255, 255, 255, 255);
+	setColor(white);
 }
 
 /// <summary>
@@ -36,6 +39,11 @@ int AsciiHandler::setArtData(std::string fileName)
 	return 0;
 }
 
+/// <summary>
+/// Displays ASCII art on window with given coordinates.
+/// </summary>
+/// <param name="xCoord">(int) Terminal x coordinate.</param>
+/// <param name="yCoord">(int) Termianl y coordinate.</param>
 void AsciiHandler::displayArt(int xCoord, int yCoord)
 {
 	terminal_color(
@@ -44,6 +52,10 @@ void AsciiHandler::displayArt(int xCoord, int yCoord)
 	terminal_printf(xCoord, yCoord, "%s", _artData.data());
 }
 
+/// <summary>
+/// Sets Bearlibterm color for ASCII art.
+/// </summary>
+/// <param name="newColor">(ColorARGB) ARGB Color object.</param>
 void AsciiHandler::setColor(ColorARGB newColor)
 {
 	_artColor = newColor;
