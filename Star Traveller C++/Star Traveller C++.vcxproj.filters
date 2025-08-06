@@ -36,6 +36,9 @@
     <ClCompile Include="ColorARGB.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
+    <ClCompile Include="MenuHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="title_art.txt">
@@ -47,6 +50,9 @@
       <Filter>Header Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="ColorARGB.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuHandler.h">
       <Filter>Header Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>

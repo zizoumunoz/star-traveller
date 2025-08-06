@@ -129,6 +129,7 @@
     <ClCompile Include="AsciiHandler.cpp" />
     <ClCompile Include="ColorARGB.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MenuHandler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="title_art.txt" />
@@ -136,6 +137,7 @@
   <ItemGroup>
     <ClInclude Include="AsciiHandler.h" />
     <ClInclude Include="ColorARGB.h" />
+    <ClInclude Include="MenuHandler.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
