@@ -8,6 +8,9 @@
 #include "BearLibTerminal.h"
 #include "ColorARGB.h"
 
+/// <summary>
+/// Creates default opaque white color object.
+/// </summary>
 AsciiHandler::AsciiHandler()
 {
 	// default color white
@@ -50,6 +53,8 @@ void AsciiHandler::displayArt(int xCoord, int yCoord)
 		color_from_argb(_artColor._alpha, _artColor._red, _artColor._green, _artColor._blue)
 	);
 	terminal_printf(xCoord, yCoord, "%s", _artData.data());
+
+	terminal_color(color_from_name("white"));	// Reset term color to white
 }
 
 /// <summary>
