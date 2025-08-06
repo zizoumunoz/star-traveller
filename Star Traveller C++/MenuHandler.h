@@ -14,6 +14,7 @@ public:
 	MenuHandler();
 	// Overloaded constructor
 	MenuHandler(std::string menuName);
+	void displayMenu(int x, int y);
 
 private:
 	std::string _menuName;

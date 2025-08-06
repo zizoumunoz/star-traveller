@@ -6,6 +6,7 @@ class AsciiHandler
 {
 public:
 	AsciiHandler();
+
 	int setArtData(std::string fileName);
 	void displayArt(int xCoord, int yCoord);
 	void setColor(ColorARGB newColor);

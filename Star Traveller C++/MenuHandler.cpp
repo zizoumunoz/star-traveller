@@ -11,9 +11,17 @@ MenuHandler::MenuHandler()
 	_menuOptions.push_back("3. Option Three");
 }
 
-// Overloaded
+// TO-DO Overloaded
 MenuHandler::MenuHandler(std::string menuName)
 	: _menuName(menuName)
+{
+
+}
+
+/// <summary>
+/// Display MenuHandler object.
+/// </summary>
+void MenuHandler::displayMenu(int x, int y)
 {
 
 }
