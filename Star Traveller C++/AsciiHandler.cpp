@@ -8,9 +8,6 @@
 #include "BearLibTerminal.h"
 #include "ColorARGB.h"
 
-/// <summary>
-/// Creates default opaque white color object.
-/// </summary>
 AsciiHandler::AsciiHandler()
 {
 	// default color white
@@ -18,10 +15,6 @@ AsciiHandler::AsciiHandler()
 	setColor(white);
 }
 
-/// <summary>
-/// Reads data from a .txt file and stores as an std::string.
-/// </summary>
-/// <param name="fileName">: Path to .txt file.</param>
 int AsciiHandler::setArtData(std::string fileName)
 {
 	// Set input file stream (Opening file for reading)
@@ -42,11 +35,6 @@ int AsciiHandler::setArtData(std::string fileName)
 	return 0;
 }
 
-/// <summary>
-/// Displays ASCII art on window with given coordinates.
-/// </summary>
-/// <param name="xCoord">(int) Terminal x coordinate.</param>
-/// <param name="yCoord">(int) Termianl y coordinate.</param>
 void AsciiHandler::displayArt(int xCoord, int yCoord)
 {
 	terminal_color(
@@ -57,10 +45,6 @@ void AsciiHandler::displayArt(int xCoord, int yCoord)
 	terminal_color(color_from_name("white"));	// Reset term color to white
 }
 
-/// <summary>
-/// Sets Bearlibterm color for ASCII art.
-/// </summary>
-/// <param name="newColor">(ColorARGB) ARGB Color object.</param>
 void AsciiHandler::setColor(ColorARGB newColor)
 {
 	_artColor = newColor;
