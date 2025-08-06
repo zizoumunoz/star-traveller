@@ -1,8 +1,5 @@
 #include "MenuHandler.h"
 
-// TO-DO
-
-// Default
 MenuHandler::MenuHandler()
 	: _menuName("Undefined Menu")
 {
@@ -11,16 +8,12 @@ MenuHandler::MenuHandler()
 	_menuOptions.push_back("3. Option Three");
 }
 
-// TO-DO Overloaded
 MenuHandler::MenuHandler(std::string menuName)
 	: _menuName(menuName)
 {
 
 }
 
-/// <summary>
-/// Display MenuHandler object.
-/// </summary>
 void MenuHandler::displayMenu(int x, int y)
 {
 
