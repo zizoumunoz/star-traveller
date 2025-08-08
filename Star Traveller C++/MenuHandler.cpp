@@ -26,3 +26,13 @@ void MenuHandler::displayMenu(int x, int y)
 		i++;
 	}
 }
+
+void MenuHandler::setTitle(std::string newTitle)
+{
+	_menuName = newTitle;
+}
+
+std::string MenuHandler::getTitle()
+{
+	return _menuName;
+}

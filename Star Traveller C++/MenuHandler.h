@@ -14,6 +14,7 @@ public:
 	/// Default constructor. 
 	/// </summary>
 	MenuHandler();
+
 	/// <summary>
 	/// Creates menu object with given title.
 	/// </summary>
@@ -26,6 +27,18 @@ public:
 	/// <param name="x">(int) X coord.</param>
 	/// <param name="y">(int) Y coord.</param>
 	void displayMenu(int x, int y);
+
+	/// <summary>
+	/// Sets title for Menu object.
+	/// </summary>
+	/// <param name="newTitle">(string) New title.</param>
+	void setTitle(std::string newTitle);
+
+	/// <summary>
+	/// Returns title of menu object.
+	/// </summary>
+	/// <returns>(String) Menu title.</returns>
+	std::string getTitle();
 
 private:
 	std::string _menuName;
