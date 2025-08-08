@@ -1,4 +1,7 @@
+#define _CRT_SECURE_NO_WARNINGS	// for terminal_printf
 #include "MenuHandler.h"
+#include "BearLibTerminal.h"
+#include <string>
 
 MenuHandler::MenuHandler()
 	: _menuName("Undefined Menu")
@@ -16,5 +19,10 @@ MenuHandler::MenuHandler(std::string menuName)
 
 void MenuHandler::displayMenu(int x, int y)
 {
-
+	int i = 0;
+	for (std::string option : _menuOptions)
+	{
+		terminal_printf(x, y + i, "%s", option.data());
+		i++;
+	}
 }

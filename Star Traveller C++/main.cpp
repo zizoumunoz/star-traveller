@@ -1,5 +1,6 @@
 ﻿#include "BearLibTerminal.h"
 #include "AsciiHandler.h"
+#include "MenuHandler.h"
 #include "ColorARGB.h"
 
 int main() {
@@ -14,10 +15,16 @@ int main() {
 
     int key = TK_0;
 
+    MenuHandler mainMenu;
+
     // Game loop
     bool running = true;
     while (running)
     {
+
+        mainMenu.displayMenu(10,17);
+
+
         terminal_refresh();
         // Key reads
         key = terminal_read();
